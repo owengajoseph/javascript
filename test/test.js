@@ -1,3 +1,5 @@
+
+
 /* describe("pow", function () {
      function pow asserts by taking two parameters and should return
     8 and 81 respectivley in this example.
@@ -15,7 +17,7 @@
  */
 
 
-/* describe("Pow", function () {
+/*  describe("Pow", function () {
     it("for negative n the result is NaN", function () {
         assert.isNaN(pow(2, -1));
 
@@ -26,12 +28,21 @@
     });
 
 });
- */
+ */ 
 
  describe("pow", function () {
+    //read like... "function makTest takes a value from the calling function"
     function makeTest(x) {
         let expected = x * x * x;
+        //it,prints on the screen 
         it(`${x} in the power 3 is ${expected}`, function () {
+
+            /* 
+            @assert.equal checks the result from the original function and compare with expected. 
+            if they do not match throw an error
+            
+             */
+
             assert.equal(pow(x, 3), expected);
         });
     }
