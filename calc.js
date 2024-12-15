@@ -16,3 +16,6 @@ let calculator = {
 calculator.read();
 alert(calculator.sum());
 alert(calculator.multiply())
+
+
+[Object.]
