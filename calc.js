@@ -18,4 +18,3 @@ alert(calculator.sum());
 alert(calculator.multiply())
 
 
-[Object.]
