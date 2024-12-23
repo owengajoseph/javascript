@@ -14,3 +14,8 @@ function ucFirst(str) {
 
 
 console.log(ucFirst('owenga'));
+
+/*
+the solution.
+let newStr = str[0].toUpperCase() + str.slice(1); 
+ */
