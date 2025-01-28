@@ -1,7 +1,9 @@
 function camelize(word) {
 
-    let storeWord = word.split('-');
+  //initial array split
+    let arr = word.split('-');
 
+    //i will sotre array with uppercase then join 
     let storeArray = [];
     console.log(storeWord);
     for (let i = 0; i < storeWord.length; i++) {
@@ -20,7 +22,7 @@ function camelize(word) {
 
 camelize("background-color");
 
-// there solution but the ideas was the same 
+// their  solution but the ideas was the same 
 function camelize(str) {
     return str
       .split('-') // splits 'my-long-word' into array ['my', 'long', 'word']
