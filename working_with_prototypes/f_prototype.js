@@ -41,4 +41,9 @@ alert( arr.__proto__.__proto__ === Object.prototype ); // true
 alert( arr.__proto__.__proto__.__proto__ ); // null
 
 
-class foo{}
+class foo{
+    foo()
+    {
+        
+    }
+}
