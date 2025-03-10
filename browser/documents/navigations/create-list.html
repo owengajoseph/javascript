@@ -13,10 +13,12 @@
     </ul>
     <script>
         // let li = document.createElement('li');
+        let val;
         while (val = prompt("enter any value", 'value')) {
-
-            alert(val);
-
+            let list = document.createElement("li");
+            list.innerHTML = val;
+            let ul = document.body.firstElementChild;
+            ul.append(list);
         }
     </script>
 </body>
