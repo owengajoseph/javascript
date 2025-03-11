@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul id="container">
+        <script>
+            /* function createTree(container, data) {
+                for ([key, value] of Object.entries(dat)) {
+
+                    alert(`${key}:${value}`);
+                }
+            } */
+
+            let data = {
+                /* when i pick the key, should be automatically be the ul */
+                // try to find a way to loop inside the value and if it is a key it is <ul> and if it is a value it is <li>
+                //working with loop and objects.
+                //by using object.keys, values , entries will return an array.
+                //can i loop on the array ? and check if it is a new array then get the key else the values.
+                "Fish": {
+                    "trout": {},
+                    "salmon": {}
+                },
+
+                "Tree": {
+                    "Huge": {
+                        "sequoia": {},
+                        "oak": {}
+                    },
+                    "Flowering": {
+                        "apple tree": {},
+                        "magnolia": {}
+                    }
+                }
+            };
+
+            for ([key, value] of Object.entries(data)) {
+                alert(key);
+                if (value) {
+                    for (value of Object.values(value)) {
+                        alert(value);
+                    }
+                }
+
+            }
+
+            /*  let container = document.getElementById('container');
+             createTree(container, data); // creates the tree in the container */
+        </script>
+
+    </ul>
+</body>
+
+</html>
