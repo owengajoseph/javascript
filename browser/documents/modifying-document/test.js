@@ -23,10 +23,32 @@ let data = {
 
 
 };
-
+//create a map for the first one.
+//create a map for the second one.
 
 let map = new Map(Object.entries(data));
-for (getval of map)
-{
-    console.log(getval);
+
+//here i can create <ul> for value
+
+
+for (key of map.keys()) {
+    console.log(key);
+}
+
+for (val of map.values()) {
+    if (typeof val == 'object') {
+        let map2 = new Map(Object.entries(val));
+        for (key of map2.keys())
+        {
+            console.log(key);
+        }
+        for (val of map2.values())
+        {
+            console.log(val);
+        }
+        // console.log(map2);
+    }
+    console.log(val);
+
+
 }
