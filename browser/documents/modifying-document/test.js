@@ -20,8 +20,13 @@ let data = {
             "magnolia": {}
         }
     }
+
+
 };
 
-console.log(Object.entries(data));
 
-// in a loop if it has a key it turns into a <ul>element.
+let map = new Map(Object.entries(data));
+for (getval of map)
+{
+    console.log(getval);
+}
