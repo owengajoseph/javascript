@@ -1,15 +1,16 @@
 function f(x) {
-    alert(x);
+    console.log(x);
 }
 
-delay(func, delaySec)
-{
+function delay(func, delaySec) {
     let cache = new Map();
-    return function () {
+    return function (x) {
         if (cache.has(delaySec)) {
-            setTimeout(delaySec)
-            func.call(this, ...arguments);
+            console.log(x);
         }
+        setTimeout(() => { func.call(this, x) }, delaySec);
+
+
     }
 }
 
