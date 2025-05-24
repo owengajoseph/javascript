@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    .selected {
+      background: #0f0;
+    }
+
+    li {
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  Click on a list item to select it.
+  <br>
+
+  <ul id="ul">
+    <li>Christopher Robin</li>
+    <li>Winnie-the-Pooh</li>
+    <li>Tigger</li>
+    <li>Kanga</li>
+    <li>Rabbit. Just rabbit.</li>
+  </ul>
+
+  <script>
+    // ...your code...
+    let selected;
+    let elem = document.getElementById("ul");
+    elem.addEventListener("click", function (event) {
+      event.preventDefault(); // Prevent default action if needed 
+      let target = event.target;//is the target element that initiated the event it does not change.
+      if (target.tagName != 'LI') return;
+      highlight(target);
+
+      function highlight(targetLi) {
+        if (selected) {
+          selected.classList.remove('selected')
+
+        }
+        selected = targetLi;
+        selected.classList.add('selected');
+      }
+    }
+
+
+    );
+  </script>
+
+</body>
+
+</html>

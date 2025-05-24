@@ -34,5 +34,4 @@ alert( arr.__proto__.__proto__ === Object.prototype ); // true
 // and null on the top.
 alert( arr.__proto__.__proto__.__proto__ ); // null
 
-
 class foo{}
